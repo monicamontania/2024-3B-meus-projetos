@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono&family=Playfair+Display&display=swap');
+
+
+:root{
+  --rosa-claro: #FED9ED;
+  --rosa-bebe: #FFD0EC;
+  --rosa-forte: #FB88B4;
+  --rosa: #FFCAD4;
+--font-titulo:"Kode Mono", monospace;
+--font-texto: "Playfair Display" , serif;
+
+}
+
+body{
+     background-color: var(--rosa-forte);
+}
