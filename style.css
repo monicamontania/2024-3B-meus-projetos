@@ -6,9 +6,8 @@
   --rosa-bebe: #FFD0EC;
   --rosa-forte: #FB88B4;
   --rosa: #FFCAD4;
---font-titulo:"Kode Mono", monospace;
---font-texto: "Playfair Display" , serif;
-
+    --font-titulo:"Kode Mono", monospace;
+    --font-texto: "Playfair Display", serif;
 }
 
 body{
@@ -25,3 +24,55 @@ body{
   width: 100%;
   margin: 0 auto;
 }
+
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 36px;
+}
+
+.titulo-principal span{
+    color: var(#3d021b);
+}
+
+.botao{
+    font-family: var(--font-texto);
+    font-size: 18px;
+    background-color: var(--rosa-forte);
+    color: #670e35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    border-bottom: 4px solid var(--rosa);
+    border-left: 4px solid var(--rosa);
+    border-right: 4px solid var(--rosa);
+    border-top: 4px solid var(--rosa);
+}
+
+.botoes{
+    display: block;
+}
+
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+}
+
+.botao:last-child{
+    border-radius: 0 0 40px 40px;
+}
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+    }
+}
+.botao:first-child{
+    border-radius: 40px 0 0;
+}
+.botao:last-child{
+    border-radius: 0 40px 0 0;
+}
+
+    
