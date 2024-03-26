@@ -3,6 +3,7 @@
 
 :root{
   --rosa-claro: #FED9ED;
+  --rosa-choque: #ff006e;
   --rosa-bebe: #FFD0EC;
   --rosa-forte: #FB88B4;
   --rosa: #FFCAD4;
@@ -63,21 +64,47 @@ body{
     border-radius: 0 0 40px 40px;
 }
 
-@media screen and (min-width: 768px){
-    .botoes{
-        display: flex;
-    }
-}
-.botao:first-child{
-    border-radius: 40px 0 0;
-}
-.botao:last-child{
-    border-radius: 0 40px 0 0;
-}
-
-.ativo{
+.botao.ativo{
     background-color: var(--rosa-bebe);
     border-bottom: 4px solid var(--rosa-forte);
 }
 
-    
+.abas-textos{
+    background-color: var(--rosa-choque);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display: block;
+
+}
+
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--rosa-forte);
+    text-transform: uppercase;
+}
+
+
+
+
+    @media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+    border-radius: 40px 0 0;
+    }
+    .botao:last-child{
+    border-radius: 0 40px 0 0;
+    }
+}
+
