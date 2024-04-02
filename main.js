@@ -1,11 +1,14 @@
 const botoes = document.querySelectorAll('.botao');
-const textos = document.querySelectorAll('.aba-conteudo')
+const textos = document.querySelectorAll('.aba-conteudo');
 
-const contadores = document.querySelectorAll('.contador')
-const tempoObjetivo01 = new Date("2024-12-01T00:00:00")
-const tempoObjetivo02 = new Date("2024-10-20T00:00:00")
-const tempoObjetivo03 = new Date("2024-11-24T00:00:00")
-const tempoObjetivo04 = new Date("2024-10-12T00:00:00")
+const contadores = document.querySelectorAll(".contador")
+const tempoAtual = Date(); //retorna a data atual do computador
+
+
+const tempoObjetivo01 = new Date("2024-12-01T00:00:00");
+const tempoObjetivo02 = new Date("2024-10-20T00:00:00");
+const tempoObjetivo03 = new Date("2024-11-24T00:00:00");
+const tempoObjetivo04 = new Date("2024-10-12T00:00:00");
 
 const tempos = [tempoObjetivo01, tempoObjetivo02, tempoObjetivo03, tempoObjetivo04];
 
@@ -41,6 +44,6 @@ function calculaTempo (tempoObjetivo){
     minutos %= 60;
     horas %= 24;
 
-    return dias + " Dias " + horas + " Horas " + minutos + " Minutos " + segundos + " Segundos "
+    return dia + " Dias " + horas + " Horas " + minutos + " Minutos " + segundos + " Segundos "
 
 }
