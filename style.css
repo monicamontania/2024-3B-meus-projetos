@@ -1,132 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono&family=Playfair+Display&display=swap');
 
 
-:root{
-  --rosa-claro: #FED9ED;
-  --rosa-choque: #ff006e;
-  --rosa-bebe: #FFD0EC;
-  --rosa-forte: #FB88B4;
-  --rosa: #FFCAD4;
-    --font-titulo:"Kode Mono", monospace;
-    --font-texto: "Playfair Display", serif;
-}
-
-body{
-     background-color: var(--rosa-forte);
-     color: var(--rosa-bebe);
-     font-family: var(--font-texto);
-}
-.conteudo-principal{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.titulo-principal{
-    text-align: left;
+#imagem1 {
     width: 100%;
-    font-size: 36px;
+}
+.principal{
+    background: #9b9797;
+    padding: 30px;
 }
 
-.titulo-principal span{
-    color: var(#3d021b);
+.titulo-principal {
+    padding-left:  20px;
 }
 
-.botao{
-    font-family: var(--font-texto);
-    font-size: 18px;
-    background-color: var(--rosa-forte);
-    color: #670e35;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    width: 100%;
-    border-bottom: 4px solid var(--rosa);
-    border-left: 4px solid var(--rosa);
-    border-right: 4px solid var(--rosa);
-    border-top: 4px solid var(--rosa);
-}
 
-.botoes{
-    display: block;
-}
-
-.botao:first-child{
-    border-radius: 40px 40px 0 0;
-}
-
-.botao:last-child{
-    border-radius: 0 0 40px 40px;
-}
-
-.botao.ativo{
-    background-color: var(--rosa-bebe);
-    border-bottom: 4px solid var(--rosa-forte);
-}
-
-.abas-textos{
-    background-color: var(--rosa-choque);
-    padding: 40px;
-    border-radius: 0 0 40px 40px;
-}
-.aba-conteudo.ativo{
-    display: block;
-
-}
-
-.aba-conteudo{
-    display: none;
-}
-
-.aba-conteudo-titulo-principal{
-    font-size: 28px;
+.titulo-centralizado {
     text-align: center;
 }
-.aba-conteudo-titulo-secundario{
+
+p {
     text-align: center;
-    color: var(--rosa-forte);
-    text-transform: uppercase;
 }
 
-.contador{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.contador-digito{
-    padding: 0 16px;
-    text-align: center;
-    min-width: 100px;
-}
-
-.contador-digito-numero{
-    font-size: 65px;
-    margin: 0;
-}
-
-.contador-digito-texto{
-    color:var(--rosa-forte);
+#missao {
     font-size: 20px;
-    margin: 0;
+}
+em strong {
+    color: #FF0000;
 }
 
-
-
-
-    @media screen and (min-width: 768px){
-    .botoes{
-        display: flex;
-    }
-    .botao:first-child{
-    border-radius: 40px 0 0;
-    }
-    .botao:last-child{
-    border-radius: 0 40px 0 0;
-    }
+.itens{
+    font-size: italic;
 }
 
+.beneficios{
+    background: #FFFFFF;
+    padding: 20%;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 50%;
+}
+
+.imagem2 {
+    width: 50%;
+}
